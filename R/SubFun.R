@@ -1304,6 +1304,8 @@ PhD.m.est = function(ai,Lis, m, q, nt, cal){
         ans <- RPD(ai = ai,Lis = Lis,n = nt,m = mm,q = q)
       }else if(mm==nt){
         ans <- obs
+      }else if(mm==Inf){
+        ans <- asy
       }else{
         ans <- EPD(m = mm,obs = obs,asy = asy)
       }
@@ -1315,6 +1317,8 @@ PhD.m.est = function(ai,Lis, m, q, nt, cal){
         ans <- RPD(ai = ai,Lis = Lis,n = nt,m = mm,q = q)
       }else if(mm==nt){
         ans <- obs
+      }else if(mm==Inf){
+        ans <- asy
       }else{
         ans <- EPD(m = mm,obs = obs,asy = asy)
       }
